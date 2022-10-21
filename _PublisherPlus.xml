@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Configuration>
   <Excluded>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Individuality\.git</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Individuality\Source</exclude>
+    <exclude>D:\SteamLibrary\steamapps\common\RimWorld\Mods\Personality\.git</exclude>
+    <exclude>D:\SteamLibrary\steamapps\common\RimWorld\Mods\Personality\.gitignore</exclude>
+    <exclude>D:\SteamLibrary\steamapps\common\RimWorld\Mods\Personality\Source</exclude>
+    <exclude>D:\SteamLibrary\steamapps\common\RimWorld\Mods\Personality\.vs</exclude>
+    <exclude>D:\SteamLibrary\steamapps\common\RimWorld\Mods\Personality\_PublisherPlus.xml</exclude>
   </Excluded>
 </Configuration>

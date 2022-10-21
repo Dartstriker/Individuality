@@ -77,7 +77,7 @@ namespace SyrTraits
                     __result = false;
                     return false;
                 }
-                if (!AbilityUtility.ValidateNoMentalState(pawn, throwMessages))
+                if (!AbilityUtility.ValidateNoMentalState(pawn, throwMessages, __instance.parent))
                 {
                     __result = false;
                     return false;

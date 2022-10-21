@@ -20,16 +20,15 @@ namespace SyrTraits
 
             MethodInfo IndividualityCardButton = AccessTools.Method(typeof(CharacterCardUtilityPatch), nameof(IndividualityCardButton));
             var codes = instructions.ToList();
-            var idx1 = codes.FindIndex(ins => ins.IsStloc() && ins.operand is LocalBuilder { LocalIndex: 15 });
-            var list = codes.GetRange(idx1 + 1, 2).Select(ins => ins.Clone()).ToList();
-            codes.InsertRange(idx1 + 1, list.Concat(new List<CodeInstruction>
+            var idx1 = codes.FindIndex(ins => ins.IsStloc() && ins.operand is LocalBuilder { LocalIndex: 20 });
+            codes.InsertRange(idx1 + 1, new List<CodeInstruction>
             {
-                new CodeInstruction(OpCodes.Ldloca, 15),
+                new CodeInstruction(OpCodes.Ldloca, 20),
                 new CodeInstruction(OpCodes.Ldarg_0),
                 new CodeInstruction(OpCodes.Ldarg_1),
                 new CodeInstruction(OpCodes.Ldarg_3),                
                 new CodeInstruction(OpCodes.Call,IndividualityCardButton)
-            }));
+            });
             return codes;
         }
 

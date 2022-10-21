@@ -227,7 +227,7 @@ namespace SyrTraits
                             || !pawn.OneOfWorkTypesIsDisabled(newTraitDef.requiredWorkTypes)) && !pawn.WorkTagIsDisabled(newTraitDef.requiredWorkTags))
                         {
                             int degree = PawnGenerator.RandomTraitDegree(newTraitDef);
-                            if (pawn.story.childhood == null || !pawn.story.childhood.DisallowsTrait(newTraitDef, degree) && (pawn.story.adulthood == null || !pawn.story.adulthood.DisallowsTrait(newTraitDef, degree)))
+                            if (pawn.story.Childhood == null || !pawn.story.Childhood.DisallowsTrait(newTraitDef, degree) && (pawn.story.Adulthood == null || !pawn.story.Adulthood.DisallowsTrait(newTraitDef, degree)))
                             {
                                 Trait trait = new Trait(newTraitDef, degree, false);
                                 pawn.story.traits.GainTrait(trait);

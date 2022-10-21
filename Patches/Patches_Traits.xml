@@ -279,8 +279,8 @@
 						<CookSpeed>5.0</CookSpeed>
 						<FoodPoisonChance>-0.75</FoodPoisonChance>
 						<ButcheryFleshEfficiency>0.1</ButcheryFleshEfficiency>
-						<HungerRateMultiplier>0.35</HungerRateMultiplier>
 					</statOffsets>
+					<hungerRateFactor>1.25</hungerRateFactor>
 				</li>
 			</degreeDatas>
 		</value>
@@ -453,7 +453,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>*/TraitDef[defName = "Wimp"]/degreeDatas/li/statOffsets</xpath>
 		<value>
-			<ToxicSensitivity>-0.9</ToxicSensitivity>
+			<ToxicResistance>0.9</ToxicResistance>
 		  <MoveSpeed>0.4</MoveSpeed>
 		</value>
 	</Operation>
@@ -493,6 +493,7 @@
 					<theOnlyAllowedMentalBreaks>
 						<li>FireStartingSpree</li>
 					</theOnlyAllowedMentalBreaks>
+					<allowedMeditationFocusTypes><li>Flame</li></allowedMeditationFocusTypes>
 					<randomMentalState>FireStartingSpree</randomMentalState>
 					<randomMentalStateMtbDaysMoodCurve>
 						<points>

@@ -87,16 +87,7 @@ namespace SyrTraits
             {
                 IncestFactor = 0.01f;
             }
-            float MelaninFactor;
-            if (request.FixedMelanin != null)
-            {
-                MelaninFactor = ChildRelationUtility.GetMelaninSimilarityFactor(request.FixedMelanin.Value, other.story.melanin);
-            }
-            else
-            {
-                MelaninFactor = PawnSkinColors.GetMelaninCommonalityFactor(other.story.melanin);
-            }
-            return LoveChance * generationChanceAgeFactor * generationChanceAgeFactor2 * generationChanceAgeGapFactor * GenderFactor * MelaninFactor * IncestFactor;
+            return LoveChance * generationChanceAgeFactor * generationChanceAgeFactor2 * generationChanceAgeGapFactor * GenderFactor * IncestFactor;
         }
     }
 }
